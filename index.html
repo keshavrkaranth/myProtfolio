@@ -209,35 +209,33 @@
       <section class="experience" id="experience">
         <div class="container">
           <h2 class="heading">Experience</h2>
-          <!-- <div class="row margin-top">
+          <div class="row margin-top">
             <div class="col">
               <div class="experience-detail">
                 <div class="experience-title mb-3">
-                  <h5>Ideamagix, Web Developer.</h5>
-                  <h6>16th Sep - 19th Dec 2020 <i class="fas fa-map-marker-alt"></i> Thane</h6>
+                  <h5>OhLocal, Backend Developer.</h5>
+                  <h6>23rd May - Present </h6>
                 </div>
                 <div class="experience-content">
                   <ul>
                     <li>
                       <p>
-                        Developed various websites that include JRR Construction group, Infinity Impex, Red Thin line
-                        Production House companies. <br>
-                        Tested and created complex validation codes for the entire User and Admin panel of CGR
-                        Resettlement Web Application. <br>
-                        Worked on Laravel project and helped creating drastic UI for the Application. <br>
-                        Worked on various Wordpress projects and created entire documentation of the workflow for
-                        clients.
+                      <ul>
+                        <li>Developed lean and Reusable API's for them.</li>
+                        <li> Got Hands on AWS and Docker.</li>
+
+                      </ul>
                       </p>
                     </li>
                   </ul>
-                  <a href="https://drive.google.com/file/d/12KfGEwD7jPOMYlSCNIZpRBNUdw94ku0O/view?usp=sharing"
-                    target="_blank" class="btn-hover color-2 btn-lg d-none d-lg-inline-block">View Certificate</a>
-                  <a href="https://drive.google.com/file/d/12KfGEwD7jPOMYlSCNIZpRBNUdw94ku0O/view?usp=sharing"
-                    target="_blank" class="btn-hover color-2 btn-sm d-inline-block d-lg-none">View Certificate</a>
+                  <!-- <a href="#" target="_blank" class="btn-hover color-2 btn-lg d-none d-lg-inline-block ">View
+                    Certificate</a>
+                  <a href="#" target="_blank" class="btn-hover color-2 btn-sm d-inline-block d-lg-none">View
+                    Certificate</a> -->
                 </div>
               </div>
             </div>
-          </div> -->
+          </div>
         </div>
       </section>
 
@@ -268,6 +266,18 @@
                   </div>
                   <div class="skills-title">
                     <h6>Django</h6>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-3 col-xl-2 text-center">
+              <div class="skills-info">
+                <div class="skills-detail d-flex justify-content-center flex-column align-items-center">
+                  <div class="skills-img">
+                    <img src="./assets/images/logos/aws.png" alt="">
+                  </div>
+                  <div class="skills-title">
+                    <h6>AWS</h6>
                   </div>
                 </div>
               </div>
@@ -352,18 +362,7 @@
               </div>
             </div>
 
-            <div class="col-6 col-md-4 col-lg-3 col-xl-2 text-center">
-              <div class="skills-info">
-                <div class="skills-detail d-flex justify-content-center flex-column align-items-center">
-                  <div class="skills-img">
-                    <img src="./assets/images/logos/materialize-css-logo.png" alt="">
-                  </div>
-                  <div class="skills-title">
-                    <h6>Materialize</h6>
-                  </div>
-                </div>
-              </div>
-            </div>
+
 
             <div class="col-6 col-md-4 col-lg-3 col-xl-2 text-center">
               <div class="skills-info">
@@ -897,20 +896,21 @@
                   <div class="contact-me-question text-center d-block d-lg-none">
                     <h4>Have a question or want to work together?</h4>
                   </div>
-                  <form>
+                  <form action=" https://sheetdb.io/api/v1/v52hcab0vgot1" method="POST" id="sheetdb-form">
                     <div class="form-group">
                       <label for="name">Enter Name</label>
                       <input type="text" class="form-control" id="name" aria-describedby="emailHelp"
-                        placeholder="Enter name">
+                        placeholder="Enter name" name="data[Name]">
                     </div>
                     <div class="form-group">
                       <label for="email">Enter Email</label>
                       <input type="email" class="form-control" id="email" aria-describedby="emailHelp"
-                        placeholder="Enter email">
+                        placeholder="Enter email" name="data[Email]">
                     </div>
                     <div class="form-group">
                       <label for="message">Enter Message</label>
-                      <textarea type="text" class="form-control" id="message" placeholder="Enter message"></textarea>
+                      <textarea type="text" class="form-control" id="message" placeholder="Enter message"
+                        name="data[Message]"></textarea>
                     </div>
                     <button type="submit" id="btn_submit" class="btn-hover color-2 btn-sm">Submit</button>
                   </form>
@@ -957,6 +957,21 @@
     </div>
   </footer>
 
+
+  <!-- <script>
+    var form = document.getElementById('sheetdb-form');
+    form.addEventListener("submit", e => {
+      e.preventDefault();
+      fetch(form.action, {
+        method: "POST",
+        body: new FormData(document.getElementById("sheetdb-form")),
+      }).then(
+        response => response.json()
+      ).then((html) => {
+        alert('success')
+      });
+    });
+  </script> -->
 
   <script src="./assets/js/jquery3.5.1.js"></script>
   <script src="./assets/js/bootstrap.min.js"></script>
